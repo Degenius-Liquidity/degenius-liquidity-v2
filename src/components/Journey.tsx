@@ -42,7 +42,7 @@ function Journey() {
   }, [])
 
   return (
-    <section className="w-full px-4 py-24 md:py-32">
+    <section id="journey" className="w-full px-4 py-24 md:py-32">
       <div className="mx-auto w-full max-w-[1200px]">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-medium uppercase tracking-wide text-text-secondary">The Journey</p>

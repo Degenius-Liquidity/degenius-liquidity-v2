@@ -5,8 +5,8 @@ const links: { label: string; to: string }[] = [
   { label: 'Home', to: '/' },
   { label: 'Journey', to: '/#journey' },
   { label: 'Journal', to: '/journal' },
-  { label: 'Resources', to: '/#resources' },
-  { label: 'About', to: '/#about' },
+  { label: 'Toolkit', to: '/toolkit' },
+  { label: 'About', to: '/about' },
   { label: 'Contact', to: '/#contact' },
 ]
 
@@ -49,7 +49,7 @@ function Navbar() {
           <ul className="flex flex-col gap-4">
             {links.map((link) => (
               <li key={link.label}>
-                <Link to={link.to} className="block text-sm text-text-secondary transition-colors hover:text-text-primary">
+                <Link to={link.to} onClick={() => setOpen(false)} className="block text-sm text-text-secondary transition-colors hover:text-text-primary">
                   {link.label}
                 </Link>
               </li>
