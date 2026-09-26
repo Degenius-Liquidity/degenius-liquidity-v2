@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import Journey from '../components/Journey'
 import LatestVideos from '../components/LatestVideos'
 import TradingSnapshot from '../components/TradingSnapshot'
+import DailyNote from '../components/DailyNote'
 import FeaturedJournal from '../components/FeaturedJournal'
 import ToolkitPreview from '../components/ToolkitPreview'
 import { useDocumentMeta } from '../utils/useDocumentMeta'
@@ -20,6 +21,7 @@ function HomePage() {
       <Journey />
       <LatestVideos />
       <TradingSnapshot />
+      <DailyNote />
       <FeaturedJournal />
       <ToolkitPreview />
     </Layout>
