@@ -96,16 +96,16 @@ function AboutPage() {
         <div className="mx-auto w-full max-w-2xl rounded-2xl border border-border bg-surface p-6 md:p-8">
           <h2 className="font-display text-2xl font-semibold tracking-tight text-text-primary">Education</h2>
           <p className="mt-4 text-base leading-relaxed text-text-secondary md:text-lg">
-            The classroom I point people to is PlayBit. It is the primary education recommendation on this site. It is an affiliate link.
+            For education I point people to PlayBit, a trading education Discord server covering futures, day trading, options, stocks and crypto. Their motto is &ldquo;Education First, Profit Second.&rdquo; Membership is handled through Whop. It is an affiliate link.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href={site.playbitClassroom.url}
               target="_blank"
               rel="sponsored noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-medium text-bg transition-opacity hover:opacity-90"
+              className="inline-flex items-center justify-center rounded-full border border-accent/60 bg-bg px-6 py-3 text-sm font-medium text-text-primary transition-colors hover:border-accent hover:bg-accent/10"
             >
-              Join the PlayBit classroom
+              See PlayBit
             </a>
             <Link to="/toolkit" className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-medium text-text-primary transition-colors hover:bg-white/5">
               See the toolkit

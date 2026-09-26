@@ -1,8 +1,10 @@
 // Daily note quotes. Every entry is credited to its real author.
-// Originally seeded from the old site's daily card (degenius-website DailyQuote.tsx).
-// Only the Marcus Aurelius line carried over: the rest of that list was original,
-// unattributed writing and has been left out. Expanded with well-known quotes on
-// discipline, patience, risk and stoicism.
+// Famous lines are credited to the person who said or wrote them.
+// Entries credited to "Degenius Liquidity" are original notes from the site owner,
+// carried over from the old site's daily card (DailyQuote.tsx) after checking that
+// none of them is, or closely paraphrases, someone else's quote. Notes from that list
+// that echoed known lines or book titles were left out; the one real quote in it
+// (Marcus Aurelius) is already credited below.
 
 export type Quote = {
   text: string
@@ -80,6 +82,26 @@ export const quotes: Quote[] = [
   { text: 'If you know the enemy and know yourself, you need not fear the result of a hundred battles.', author: 'Sun Tzu', source: 'The Art of War' },
   { text: 'A man who is master of patience is master of everything else.', author: 'George Savile, Lord Halifax' },
   { text: 'Wisdom is knowing what to do next; virtue is doing it.', author: 'David Starr Jordan' },
+
+  // Notes from the owner (original writing)
+  { text: "A loss isn't a failure. It's data. Every bad trade is telling you something about your psychology, your setup, or your risk management.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "The market didn't stop you from being profitable. You did. Fear. Greed. Revenge trades. Cutting winners early. Holding losers too long.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "Fear isn't the enemy. Fear is a messenger. When fear shows up before a trade, it's asking: have you planned your risk? Are you trading your system or your feelings?", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "You take a loss. You feel it. Then you size up. Open three trades. Try to win it all back in one session. That's not trading. That's gambling with a chart open.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "You hit your daily target. Everything is green. Then you think: just one more. That 'one more' has blown more accounts than any bad strategy ever could.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "FOMO isn't excitement. It's panic dressed up as opportunity. The trade you chased because you 'couldn't miss it'? That's the one that hurts the most.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: 'My biggest losing days always came after my best winning days. Success breeds confidence. Confidence breeds carelessness. Stay humble. Trust the process.', author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "You don't need more indicators. You don't need a better strategy. You need to execute the one you have, every single day, without letting emotions take over.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "'Make $500 today' is a lottery ticket. 'Execute clean setups with proper risk management today' is a trading career.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "The goal isn't to have more great days. It's to eliminate your worst days. One catastrophic session can wipe out ten good ones. Protecting your downside is your edge.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "Trading rules aren't a cage. They're armour. The market is chaotic. Your rules are the only thing between you and the chaos. Stop fighting them.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: 'You cannot control where price goes. You cannot control news events. You can control your risk. Your response. Your next decision.', author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "The loss happened. The stop got hit. The news moved the market against you. Love the lesson it gave you. Nothing in trading is wasted if you're paying attention.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "Your strategy works. You've seen it work. But the moment it strings three losses together, you abandon it. That's not strategy. That's fear.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "Enter every trade expecting to be wrong. Not pessimism. Strategy. When you assume you're wrong, you protect your risk. You don't add to losers. You don't move your stop.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "A prop firm account is a test. Not of your strategy. Of your character. Can you follow the rules when you're up? Can you stop trading when the market's against you?", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: "Most traders fail evals not because of bad trades, but because of one bad day they refused to accept. Hit your max drawdown? That's the lesson. Not the ending.", author: 'Degenius Liquidity', source: 'Note from the owner' },
+  { text: 'Getting funded is the beginning, not the goal. Real money. Real rules. Real accountability. All the psychology work you skipped? The funded account will find it.', author: 'Degenius Liquidity', source: 'Note from the owner' },
 ]
 
 /** Day of the year in UTC (1-366), so every visitor sees the same quote on a given day. */

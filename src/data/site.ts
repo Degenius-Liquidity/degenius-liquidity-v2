@@ -9,7 +9,7 @@ export const site = {
   tiktokUrl: 'https://www.tiktok.com/@degenius.liquidity',
   linktreeUrl: 'https://linktr.ee/degenius_liquidity',
   playbitClassroom: {
-    name: 'PlayBit classroom',
+    name: 'PlayBit',
     url: 'https://whop.com/playbit/playbit?a=degeniusliquidity',
     affiliate: true,
   },
@@ -41,4 +41,4 @@ export const riskDisclaimer =
   'Futures and other leveraged products involve substantial risk of loss and are not suitable for every trader. You can lose more than your initial deposit. Nothing on this website is financial, investment or trading advice. Past results, journal entries and evaluations are not a guarantee of future performance. This site is about UK futures day trading, not prediction markets.'
 
 export const affiliateDisclaimer =
-  'Some links are affiliate. I earn a commission if you sign up. No extra cost to you. I only recommend tools I use or have a genuine reason to point to. Affiliate relationships are disclosed on each relevant card. Referral codes are listed where I have them; this site does not claim that a code auto-applies or that it unlocks a specific discount unless the provider confirms that at checkout. PlayBit trading bots are a separate product from the PlayBit classroom and are not a claim that bots produce prop-firm payouts.'
+  'Some links are affiliate. I earn a commission if you sign up. No extra cost to you. I only recommend tools I use or have a genuine reason to point to. Affiliate relationships are disclosed on each relevant card. Referral codes are listed where I have them; this site does not claim that a code auto-applies or that it unlocks a specific discount unless the provider confirms that at checkout. PlayBit trading bots are a separate product from the main PlayBit Discord membership and are not a claim that bots produce prop-firm payouts.'

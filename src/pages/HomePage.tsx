@@ -6,6 +6,7 @@ import TradingSnapshot from '../components/TradingSnapshot'
 import DailyNote from '../components/DailyNote'
 import FeaturedJournal from '../components/FeaturedJournal'
 import ToolkitPreview from '../components/ToolkitPreview'
+import TradingThingsCard from '../components/TradingThingsCard'
 import { useDocumentMeta } from '../utils/useDocumentMeta'
 
 function HomePage() {
@@ -18,10 +19,11 @@ function HomePage() {
   return (
     <Layout>
       <Hero />
+      <DailyNote />
       <Journey />
       <LatestVideos />
       <TradingSnapshot />
-      <DailyNote />
+      <TradingThingsCard />
       <FeaturedJournal />
       <ToolkitPreview />
     </Layout>

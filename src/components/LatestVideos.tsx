@@ -45,7 +45,6 @@ function LatestVideos() {
           >
             Watch on TikTok {'->'}
           </a>
-          <p className="text-xs text-text-secondary">Secondary link. The primary education CTA is the PlayBit classroom.</p>
         </div>
       </div>
     </section>

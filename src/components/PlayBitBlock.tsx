@@ -6,13 +6,13 @@ function PlayBitBlock() {
       <p className="text-xs font-medium uppercase tracking-wide text-text-secondary">Education</p>
       <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight text-text-primary">PlayBit</h2>
       <p className="mt-3 text-sm leading-relaxed text-text-secondary">
-        PlayBit is a trading education Discord server covering futures, day trading, options, stocks and crypto, with trading bots as a separate product. Membership is handled through Whop.
+        PlayBit is a trading education Discord server covering futures, day trading, options, stocks and crypto, with trading bots as a separate product. Their motto: &ldquo;Education First, Profit Second.&rdquo; Membership is handled through Whop.
       </p>
       <a
         href={site.playbitClassroom.url}
         target="_blank"
         rel="sponsored noopener noreferrer"
-        className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-medium text-bg transition-opacity hover:opacity-90"
+        className="mt-6 inline-flex w-full items-center justify-center rounded-full border border-accent/60 bg-bg px-6 py-3 text-sm font-medium text-text-primary transition-colors hover:border-accent hover:bg-accent/10"
       >
         See PlayBit
       </a>

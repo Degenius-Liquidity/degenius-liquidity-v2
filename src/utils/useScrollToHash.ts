@@ -1,17 +1,19 @@
-﻿import { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
+/** On every route change: scroll to the hash target if there is one, otherwise land at the top. */
 export function useScrollToHash() {
-  const location = useLocation()
+  const { pathname, hash } = useLocation()
 
   useEffect(() => {
-    if (!location.hash) return
-
-    const id = location.hash.replace('#', '')
-    const element = document.getElementById(id)
-
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    if (hash) {
+      const element = document.getElementById(hash.replace('#', ''))
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        return
+      }
     }
-  }, [location])
+
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [pathname, hash])
 }
