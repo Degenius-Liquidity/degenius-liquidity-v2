@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Layout from '../components/Layout'
 import JournalFilters from '../components/JournalFilters'
 import JournalPageCard from '../components/JournalPageCard'
+import JournalComingSoon from '../components/JournalComingSoon'
 import { getJournalFilterOptions, usePublishedJournalEntries } from '../content/journal/journalLoader'
 import { journalFormUrl } from '../data/site'
 import { useDocumentMeta } from '../utils/useDocumentMeta'
@@ -93,7 +94,7 @@ function JournalPage() {
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs font-medium uppercase tracking-wide text-text-secondary">Journal</p>
             <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight text-text-primary md:text-5xl">Trading Journal</h1>
-            <p className="mt-4 text-base leading-relaxed text-text-secondary md:text-lg">An archive documenting my path to consistent profitability, one entry at a time. Trade reviews, lessons and honest reflections.</p>
+            <p className="mt-4 text-base leading-relaxed text-text-secondary md:text-lg">A written trade log is on the way. Until it launches, the layout below is a blurred preview, not real trades.</p>
             {addEntryControl}
           </div>
 
@@ -108,7 +109,8 @@ function JournalPage() {
               </p>
             </div>
           ) : (
-            <>
+            <div className="mt-16">
+            <JournalComingSoon>
               {featuredEntry ? (
                 <div className="mt-16">
                   <JournalPageCard entry={featuredEntry} featured />
@@ -150,7 +152,8 @@ function JournalPage() {
                   </div>
                 )}
               </div>
-            </>
+            </JournalComingSoon>
+            </div>
           )}
         </div>
       </section>

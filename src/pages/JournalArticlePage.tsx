@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import { formatJournalDate, usePublishedJournalEntries } from '../content/journal/journalLoader'
 import { useDocumentMeta } from '../utils/useDocumentMeta'
 import { resultToneClass } from '../utils/resultTone'
+import JournalComingSoon from '../components/JournalComingSoon'
 
 function JournalArticlePage() {
   const { slug } = useParams<{ slug: string }>()
@@ -10,8 +11,8 @@ function JournalArticlePage() {
   const entry = slug ? entries.find((item) => item.slug === slug) : undefined
 
   useDocumentMeta({
-    title: loading ? 'Journal | Degenius Liquidity' : entry ? `${entry.title} | Degenius Liquidity journal` : 'Entry not found | Degenius Liquidity',
-    description: loading ? 'Loading journal entry.' : entry ? entry.summary : 'This journal entry does not exist or is not yet published.',
+    title: 'Journal coming soon | Degenius Liquidity',
+    description: 'The Degenius Liquidity trade log is launching soon. Follow on TikTok for updates.',
     path: entry ? `/journal/${entry.slug}` : '/journal',
   })
 
@@ -46,6 +47,7 @@ function JournalArticlePage() {
       <article className="w-full px-4 py-16 sm:py-20 md:py-28">
         <div className="mx-auto w-full max-w-2xl">
           <Link to="/journal" className="text-sm text-text-secondary transition-colors hover:text-text-primary">{'<-'} Back to journal</Link>
+          <JournalComingSoon>
 
           <p className="mt-8 text-xs font-medium uppercase tracking-wide text-text-secondary">{formatJournalDate(entry.date)}</p>
           <h1 className="mt-3 font-display text-3xl font-semibold tracking-tight text-text-primary md:text-4xl">{entry.title}</h1>
@@ -69,6 +71,7 @@ function JournalArticlePage() {
           </div>
 
           <div className="mt-10 border-t border-border pt-10 text-base leading-relaxed text-text-secondary md:text-lg [&>p]:mb-4 [&>p:last-child]:mb-0" dangerouslySetInnerHTML={{ __html: entry.bodyHtml }}></div>
+          </JournalComingSoon>
 
           <Link to="/journal" className="mt-12 inline-flex rounded-full border border-border px-6 py-3 text-sm font-medium text-text-primary transition-colors hover:bg-white/5">{'<-'} Back to journal</Link>
         </div>
