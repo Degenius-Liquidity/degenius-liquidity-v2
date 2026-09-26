@@ -25,15 +25,15 @@ function ToolkitPage() {
 
           <div className="mx-auto mt-10 max-w-2xl rounded-2xl border border-border bg-surface p-6 text-left">
             <p className="text-sm leading-relaxed text-text-secondary">
-              Primary education recommendation: <span className="text-text-primary">PlayBit classroom</span>. PlayBit trading bots are listed separately and are not a claim that bots produce prop-firm payouts.
+              Education: <span className="text-text-primary">PlayBit</span>, a trading education Discord server covering futures, day trading, options, stocks and crypto. Membership is handled through Whop. PlayBit trading bots are listed separately and are not a claim that bots produce prop-firm payouts.
             </p>
             <a
               href={site.playbitClassroom.url}
               target="_blank"
               rel="sponsored noopener noreferrer"
-              className="mt-4 inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-bg transition-opacity hover:opacity-90"
+              className="mt-4 inline-flex rounded-full border border-accent/60 bg-bg px-5 py-2.5 text-sm font-medium text-text-primary transition-colors hover:border-accent hover:bg-accent/10"
             >
-              Open the PlayBit classroom
+              See PlayBit
             </a>
             <p className="mt-3 text-xs text-text-secondary">{affiliateMicrocopy}</p>
           </div>
