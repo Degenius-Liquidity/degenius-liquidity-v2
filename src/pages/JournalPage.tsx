@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Layout from '../components/Layout'
 import JournalFilters from '../components/JournalFilters'
 import JournalPageCard from '../components/JournalPageCard'
-import JournalComingSoon from '../components/JournalComingSoon'
+import JournalComingSoon, { journalPlaceholders } from '../components/JournalComingSoon'
 import { getJournalFilterOptions, usePublishedJournalEntries } from '../content/journal/journalLoader'
 import { journalFormUrl } from '../data/site'
 import { useDocumentMeta } from '../utils/useDocumentMeta'
@@ -101,12 +101,14 @@ function JournalPage() {
           {loading ? (
             <p className="mt-24 text-center text-sm text-text-secondary">Loading journal…</p>
           ) : allEntries.length === 0 ? (
-            <div className="mx-auto mt-20 max-w-lg rounded-2xl border border-border bg-surface px-8 py-16 text-center">
-              <p className="text-xs font-medium uppercase tracking-wide text-text-secondary">No entries yet</p>
-              <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight text-text-primary">The journal is still blank</h2>
-              <p className="mt-4 text-sm leading-relaxed text-text-secondary">
-                Real sessions will appear here once they are written up. Nothing is invented to fill the page.
-              </p>
+            <div className="mt-16">
+              <JournalComingSoon>
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+                  {journalPlaceholders.map((entry) => (
+                    <JournalPageCard key={entry.slug} entry={entry} />
+                  ))}
+                </div>
+              </JournalComingSoon>
             </div>
           ) : (
             <div className="mt-16">

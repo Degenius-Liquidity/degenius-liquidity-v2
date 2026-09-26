@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { site } from '../data/site'
+import type { JournalEntry } from '../content/journal/journalLoader'
 
 type Props = {
   children?: ReactNode
@@ -38,3 +39,20 @@ function JournalComingSoon({ children }: Props) {
 }
 
 export default JournalComingSoon
+
+const placeholderBase = {
+  market: 'NQ',
+  model: 'Example',
+  result: 'Example',
+  draft: false,
+  lesson: 'Placeholder text',
+  readingTime: '1 min read',
+  tags: ['example'],
+  bodyHtml: '<p>Placeholder layout. Not a real trade.</p>',
+}
+
+export const journalPlaceholders: JournalEntry[] = [
+  { ...placeholderBase, slug: 'example-1', date: '2026-01-01', title: 'Example entry title', summary: 'Placeholder summary showing where a written session review will sit.' },
+  { ...placeholderBase, slug: 'example-2', date: '2026-01-02', title: 'Example entry title', summary: 'Placeholder summary showing where a written session review will sit.' },
+  { ...placeholderBase, slug: 'example-3', date: '2026-01-03', title: 'Example entry title', summary: 'Placeholder summary showing where a written session review will sit.' },
+]

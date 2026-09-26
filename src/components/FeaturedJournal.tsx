@@ -2,11 +2,11 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { usePublishedJournalEntries } from '../content/journal/journalLoader'
 import JournalPageCard from './JournalPageCard'
-import JournalComingSoon from './JournalComingSoon'
+import JournalComingSoon, { journalPlaceholders } from './JournalComingSoon'
 
 function FeaturedJournal() {
   const { entries: allEntries } = usePublishedJournalEntries()
-  const entries = useMemo(() => allEntries.slice(0, 3), [allEntries])
+  const entries = useMemo(() => (allEntries.length ? allEntries : journalPlaceholders).slice(0, 3), [allEntries])
   const cardRefs = useRef<(HTMLDivElement | null)[]>([])
   const [visible, setVisible] = useState<boolean[]>(() => entries.map(() => true))
 
@@ -39,8 +39,6 @@ function FeaturedJournal() {
 
     return () => observer.disconnect()
   }, [entries])
-
-  if (entries.length === 0) return null
 
   return (
     <section className="w-full px-4 py-24 md:py-32">
