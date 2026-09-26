@@ -1,6 +1,7 @@
 ﻿import { Link } from 'react-router-dom'
 import type { JournalEntry } from '../content/journal/journalLoader'
 import { formatJournalDate } from '../content/journal/journalLoader'
+import { resultToneClass } from '../utils/resultTone'
 
 type JournalPageCardProps = {
   entry: JournalEntry
@@ -24,13 +25,12 @@ function JournalPageCard({ entry, featured = false }: JournalPageCardProps) {
 
       <div className="mt-4 flex flex-wrap gap-2">
         <span className="rounded-full border border-border px-3 py-1 text-xs font-medium text-text-secondary">{entry.market}</span>
-        <span className="rounded-full border border-border px-3 py-1 text-xs font-medium text-text-secondary">{entry.model}</span>
         <span className="rounded-full border border-border px-3 py-1 text-xs font-medium text-text-secondary">{entry.readingTime}</span>
       </div>
 
       <div className="mt-5 border-t border-border pt-4">
         <p className="text-xs font-medium uppercase tracking-wide text-text-secondary">Result</p>
-        <p className="mt-1.5 text-sm text-text-primary">{entry.result}</p>
+        <p className={`mt-1.5 text-sm ${resultToneClass(entry.result)}`}>{entry.result}</p>
       </div>
 
       <div className="mt-4 flex-1">

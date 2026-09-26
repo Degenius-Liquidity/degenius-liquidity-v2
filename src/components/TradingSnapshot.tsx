@@ -2,7 +2,6 @@
 import { stats } from '../data/stats'
 import StatCard from './StatCard'
 import CurrentJourneyCard from './CurrentJourneyCard'
-import ChallengeCard from './ChallengeCard'
 
 function TradingSnapshot() {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([])
@@ -59,9 +58,9 @@ function TradingSnapshot() {
     <section className="w-full px-4 py-24 md:py-32">
       <div className="mx-auto w-full max-w-[1200px]">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-medium uppercase tracking-wide text-text-secondary">Live</p>
+          <p className="text-xs font-medium uppercase tracking-wide text-text-secondary">Snapshot</p>
           <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-text-primary md:text-5xl">Trading Snapshot</h2>
-          <p className="mt-4 text-base leading-relaxed text-text-secondary md:text-lg">A transparent overview of where I am today on my trading journey. These numbers will eventually become dynamic.</p>
+          <p className="mt-4 text-base leading-relaxed text-text-secondary md:text-lg">A current overview of how I trade. This is a snapshot of process, not a live P&L feed.</p>
         </div>
 
         <div className="mt-16 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
@@ -72,9 +71,8 @@ function TradingSnapshot() {
           ))}
         </div>
 
-        <div ref={panelRef} className={`mt-16 grid grid-cols-1 items-stretch gap-6 transition-all duration-700 ease-out lg:grid-cols-2 lg:gap-8 ${panelVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
+        <div ref={panelRef} className={`mt-16 grid grid-cols-1 items-stretch gap-6 transition-all duration-700 ease-out lg:gap-8 ${panelVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
           <CurrentJourneyCard />
-          <ChallengeCard />
         </div>
       </div>
     </section>
