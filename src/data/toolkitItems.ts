@@ -121,7 +121,7 @@ export const toolkitItems: ToolkitItem[] = [
     useCase: 'My main trading platform. You can connect Rithmic accounts to it, it has a free built-in copy trader, and I also use it for journaling.',
     whyUseful: 'Running several prop accounts from one place, with trades copied across them, keeps execution simple and the journal tied to real fills.',
     whoItSuits: 'Futures traders on Rithmic-based prop accounts who manage more than one account.',
-    honestNote: 'Not an affiliate link. Check which prop firms allow copy trading before you use it, because rules differ by firm.',
+    honestNote: 'Not an affiliate link. I am a moderator in the TradingThings Discord, so you know where I stand. Check which prop firms allow copy trading before you use it, because rules differ by firm.',
     url: 'https://tradingthings.io/',
     isAffiliate: false,
   },
