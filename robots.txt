@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# This site is about UK futures day trading and a public journal.
+# It is not a prediction-market product.
