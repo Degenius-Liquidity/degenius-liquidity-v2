@@ -166,7 +166,8 @@ export const toolkitItems: ToolkitItem[] = [
     whyUseful: 'It does the legwork so I can review and approve instead of juggling tools.',
     whoItSuits: 'Solo creators who want help with the busywork but still sign off on everything that goes out.',
     honestNote: 'Not an affiliate link. It helps with the business side. It does not trade for me, and every post and site change is reviewed by me first.',
-    url: '',
+    url: 'https://x.ai/grok',
+    ctaLabel: 'Try Grok',
     isAffiliate: false,
   },
   {
@@ -177,7 +178,8 @@ export const toolkitItems: ToolkitItem[] = [
     whyUseful: 'Useful for talking through structure and risk before a session, and reviewing trades after.',
     whoItSuits: 'Traders who already have their own plan and want a sounding board, not signals to copy.',
     honestNote: 'Not an affiliate link and not a signal service. It does not place trades. Every decision and every loss is mine.',
-    url: '',
+    url: 'https://x.ai/grok',
+    ctaLabel: 'Try Grok',
     isAffiliate: false,
   },
   {
