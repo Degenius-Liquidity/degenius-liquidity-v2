@@ -21,7 +21,7 @@ const principles = [
 function AboutPage() {
   useDocumentMeta({
     title: 'About | Degenius Liquidity, UK futures day trader',
-    description: 'Degenius Liquidity is a UK futures day trader documenting NQ, funded evaluations and the work of building a durable process. Faceless. No guru pitch.',
+    description: 'Degenius Liquidity is a UK futures day trader documenting NQ, prop-firm evaluations, funded accounts and the work of building a durable process. Faceless. No guru pitch.',
     path: '/about',
   })
 
@@ -37,7 +37,7 @@ function AboutPage() {
               Degenius Liquidity documents the real process of building a sustainable futures trading business from the United Kingdom.
             </p>
             <p className="text-base leading-relaxed text-text-secondary md:text-lg">
-              The public work is the trading: funded evaluations, psychology, missed trades, and the slow construction of a process that can survive both winning and losing weeks.
+              The public work is the trading: prop-firm evaluations, funded accounts, psychology, missed trades, and the slow construction of a process that can survive both winning and losing weeks.
             </p>
             <p className="text-base font-medium leading-relaxed text-text-primary md:text-lg">
               I will not always get the market right, but I will be honest about the trading journey.

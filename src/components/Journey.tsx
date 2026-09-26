@@ -46,7 +46,7 @@ function Journey() {
       <div className="mx-auto w-full max-w-[1200px]">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-medium uppercase tracking-wide text-text-secondary">The Journey</p>
-          <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-text-primary md:text-5xl">From First Trade to Full-Time</h2>
+          <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-text-primary md:text-5xl">The Road to Full-Time</h2>
         </div>
 
         <div className="relative mt-20">

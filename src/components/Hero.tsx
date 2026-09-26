@@ -19,7 +19,7 @@ function Hero() {
 
           <div className="mt-8 max-w-xl">
             <p className="text-base leading-relaxed text-text-secondary md:text-lg">
-              Degenius Liquidity is a UK futures day trader documenting the work: Nasdaq-100 (NQ) first, occasional ES and GC, funded evaluations, and the lessons that actually change how the next session is traded.
+              Degenius Liquidity is a UK futures day trader documenting the work: Nasdaq-100 (NQ) first, occasional ES and GC, prop-firm evaluations and funded accounts, and the lessons that actually change how the next session is traded.
             </p>
 
             <p className="mt-4 text-base font-medium leading-snug text-text-primary md:text-lg">
