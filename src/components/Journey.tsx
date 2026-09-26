@@ -11,7 +11,7 @@ const milestones: Milestone[] = [
   { label: '2024', points: ['Discovered futures and prop firms.', 'Realised consistency mattered more than excitement.'] },
   { label: '2026', points: ['Committed to becoming a full-time trader.'] },
   { label: 'Today', points: ['Trading NQ.', 'Building funded accounts.', 'Sharing everything publicly.'], variant: 'current' },
-  { label: 'Next Goal', points: ['Six-figure payout year.'], variant: 'goal' },
+  { label: 'Next Goal', points: ['Repeatable execution.', 'A process that still works after losing weeks.'], variant: 'goal' },
 ]
 
 function Journey() {

@@ -1,9 +1,9 @@
-﻿---
+---
 date: "2026-07-06"
 market: "ES"
 model: "ORB"
 result: "-$60"
-draft: false
+draft: true
 ---
 Slow morning session with no clear range break.
 
