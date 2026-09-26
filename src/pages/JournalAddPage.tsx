@@ -19,7 +19,7 @@ function JournalAddPage() {
           <p className="mt-8 text-xs font-medium uppercase tracking-wide text-text-secondary">Journal</p>
           <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight text-text-primary md:text-5xl">Add an entry</h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-text-secondary md:text-lg">
-            A few sentences about the session is enough. Date, market, model and result sit in the form. The first sentence becomes the title.
+            A few sentences about the session is enough. Date, market and result sit in the form. The first sentence becomes the title.
           </p>
 
           {journalFormUrl ? (

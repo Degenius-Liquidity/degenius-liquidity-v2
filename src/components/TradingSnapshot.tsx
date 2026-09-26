@@ -2,7 +2,6 @@
 import { stats } from '../data/stats'
 import StatCard from './StatCard'
 import CurrentJourneyCard from './CurrentJourneyCard'
-import ChallengeCard from './ChallengeCard'
 
 function TradingSnapshot() {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([])
@@ -72,9 +71,8 @@ function TradingSnapshot() {
           ))}
         </div>
 
-        <div ref={panelRef} className={`mt-16 grid grid-cols-1 items-stretch gap-6 transition-all duration-700 ease-out lg:grid-cols-2 lg:gap-8 ${panelVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
+        <div ref={panelRef} className={`mt-16 grid grid-cols-1 items-stretch gap-6 transition-all duration-700 ease-out lg:gap-8 ${panelVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
           <CurrentJourneyCard />
-          <ChallengeCard />
         </div>
       </div>
     </section>

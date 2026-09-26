@@ -23,7 +23,7 @@ function LatestVideos() {
           <p className="text-xs font-medium uppercase tracking-wide text-text-secondary">Short-form</p>
           <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-text-primary md:text-5xl">Notes on TikTok</h2>
           <p className="mt-4 text-base leading-relaxed text-text-secondary md:text-lg">
-            Daily clips live on {site.tiktokHandle}. This website is the slower, written record. TikTok is the working notebook.
+            Short clips live on {site.tiktokHandle}. This website is the slower, written record. TikTok is the working notebook.
           </p>
         </div>
 

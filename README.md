@@ -13,7 +13,6 @@ Install dependencies, then start the Vite dev server from the project folder. Us
 - Brand, links, affiliate and risk copy: `src/data/site.ts`
 - Toolkit cards: `src/data/toolkitItems.ts`
 - Trading snapshot stats: `src/data/stats.ts`
-- Evaluation card: `src/data/challenge.ts`
 - Journey timeline: `src/components/Journey.tsx`
 - Hero: `src/components/Hero.tsx`
 - About page: `src/pages/AboutPage.tsx`

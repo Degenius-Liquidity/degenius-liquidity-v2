@@ -4,7 +4,6 @@ export type JournalEntry = {
   slug: string
   date: string
   market: string
-  model: string
   result: string
   draft: boolean
   title: string
@@ -85,7 +84,7 @@ function deriveReadingTime(body: string): string {
 const TAG_KEYWORDS: Record<string, string[]> = {
   Psychology: ['anticipat', 'patien', 'discipline', 'fear', 'confiden', 'emotion', 'hesitat', 'plan'],
   'Risk Management': ['stop loss', 'risk', 'position size', 'drawdown', 'protect'],
-  'Prop Firms': ['evaluation', 'funded', 'prop firm', 'payout', 'challenge'],
+  'Prop Firms': ['evaluation', 'funded', 'prop firm', 'payout'],
   'Website Build': ['website', 'homepage', 'code', 'deploy'],
   'Behind the Scenes': ['behind the scenes'],
 }
@@ -283,7 +282,6 @@ function entriesFromCsv(csv: string): JournalEntry[] {
 
     const date = normalizeDate(cell(row, 'date'))
     const market = cell(row, 'market')
-    const model = cell(row, 'model')
     const result = cell(row, 'result')
     const body = cell(row, 'what happened')
     const mainLesson = cell(row, 'main lesson')
@@ -298,7 +296,6 @@ function entriesFromCsv(csv: string): JournalEntry[] {
       slug: slugify([date, market, title], usedSlugs),
       date,
       market,
-      model,
       result,
       draft: false,
       title,
@@ -363,12 +360,11 @@ export function usePublishedJournalEntries(): { entries: JournalEntry[]; loading
   return { entries, loading }
 }
 
-export function getJournalFilterOptions(entries: JournalEntry[]): { markets: string[]; models: string[]; tags: string[] } {
+export function getJournalFilterOptions(entries: JournalEntry[]): { markets: string[]; tags: string[] } {
   const markets = Array.from(new Set(entries.map((entry) => entry.market).filter(Boolean))).sort()
-  const models = Array.from(new Set(entries.map((entry) => entry.model).filter(Boolean))).sort()
   const tags = Array.from(new Set(entries.flatMap((entry) => entry.tags))).sort()
 
-  return { markets, models, tags }
+  return { markets, tags }
 }
 
 export function formatJournalDate(dateString: string): string {

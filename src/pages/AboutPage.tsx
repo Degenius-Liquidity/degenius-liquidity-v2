@@ -13,8 +13,8 @@ const principles = [
     body: 'NQ is the main book. ES and GC appear when they earn a place, not to look busy.',
   },
   {
-    title: 'Rules before content',
-    body: 'Maximum three trades a day. Stop after two losses. Trading is not altered to fill a content calendar.',
+    title: 'Trading before content',
+    body: 'Trading is not altered to fill a content calendar.',
   },
 ]
 
@@ -57,15 +57,12 @@ function AboutPage() {
 
       <section className="w-full px-4 pb-16 md:pb-24">
         <div className="mx-auto w-full max-w-2xl">
-          <h2 className="font-display text-2xl font-semibold tracking-tight text-text-primary md:text-3xl">How I trade</h2>
+          <h2 className="font-display text-2xl font-semibold tracking-tight text-text-primary md:text-3xl">At a glance</h2>
           <dl className="mt-8 divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface">
             {[
               ['Primary market', 'NQ (Nasdaq-100 futures)'],
               ['Occasional markets', site.occasionalMarkets],
               ['Sessions', site.sessions],
-              ['Style', site.style],
-              ['Models', site.models],
-              ['Risk rules', `${site.maxTrades}. Intended stop after ${site.stopAfterLosses}.`],
               ['Base', site.location],
             ].map(([label, value]) => (
               <div key={label} className="flex flex-col gap-1 px-6 py-4 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">

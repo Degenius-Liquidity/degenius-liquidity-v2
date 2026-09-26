@@ -42,7 +42,6 @@ export default JournalComingSoon
 
 const placeholderBase = {
   market: 'NQ',
-  model: 'Example',
   result: 'Example',
   draft: false,
   lesson: 'Placeholder text',

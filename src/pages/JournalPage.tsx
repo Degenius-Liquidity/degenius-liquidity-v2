@@ -16,7 +16,6 @@ function JournalPage() {
   })
 
   const [search, setSearch] = useState('')
-  const [model, setModel] = useState('All Models')
   const [market, setMarket] = useState('All Markets')
   const [tag, setTag] = useState('All Tags')
 
@@ -29,13 +28,12 @@ function JournalPage() {
 
     return allEntries.filter((entry) => {
       const matchesSearch = query.length === 0 || entry.title.toLowerCase().includes(query) || entry.summary.toLowerCase().includes(query)
-      const matchesModel = model === 'All Models' || entry.model === model
       const matchesMarket = market === 'All Markets' || entry.market === market
       const matchesTag = tag === 'All Tags' || entry.tags.includes(tag)
 
-      return matchesSearch && matchesModel && matchesMarket && matchesTag
+      return matchesSearch && matchesMarket && matchesTag
     })
-  }, [allEntries, search, model, market, tag])
+  }, [allEntries, search, market, tag])
 
   const cardRefs = useRef<(HTMLDivElement | null)[]>([])
   const [visible, setVisible] = useState<boolean[]>(() => filteredEntries.map(() => true))
@@ -123,13 +121,10 @@ function JournalPage() {
                 <JournalFilters
                   search={search}
                   onSearchChange={setSearch}
-                  model={model}
-                  onModelChange={setModel}
                   market={market}
                   onMarketChange={setMarket}
                   tag={tag}
                   onTagChange={setTag}
-                  models={filterOptions.models}
                   markets={filterOptions.markets}
                   tags={filterOptions.tags}
                 />
