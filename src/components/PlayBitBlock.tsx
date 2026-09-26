@@ -6,7 +6,7 @@ function PlayBitBlock() {
       <p className="text-xs font-medium uppercase tracking-wide text-text-secondary">Education</p>
       <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight text-text-primary">PlayBit</h2>
       <p className="mt-3 text-sm leading-relaxed text-text-secondary">
-        PlayBit is a trading education classroom and community on Whop. It covers futures, day trading, options, stocks and crypto, and also offers trading bots.
+        PlayBit is a trading education Discord server covering futures, day trading, options, stocks and crypto, with trading bots as a separate product. Membership is handled through Whop.
       </p>
       <a
         href={site.playbitClassroom.url}
